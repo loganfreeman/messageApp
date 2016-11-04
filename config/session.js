@@ -24,6 +24,10 @@ module.exports.session = {
   secret: '4cb3e387d024278f53c177ae55b055ab',
 
 
+  adapter: 'redis',
+  host: process.env.REDIS_HOST || 'localhost',
+
+
   /***************************************************************************
   *                                                                          *
   * Set the session cookie expire time The maxAge is set by milliseconds,    *
